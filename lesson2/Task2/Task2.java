@@ -16,7 +16,7 @@ public class Task2 {
         System.out.println("num1 * num2: " + (a * b));
         System.out.println("num1 / num2: " + (a / b));
         System.out.println("Деление по модулю: " + (a % b));
-        //System.out.println("Инкремент: " + (a++-b));
-        //System.out.println("Декремент: " + (a--+b));
+        System.out.println("Инкремент: " + (a++-b));
+        System.out.println("Декремент: " + (a--+b));
     }
 }
