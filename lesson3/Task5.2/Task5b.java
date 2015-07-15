@@ -42,6 +42,5 @@ public class Task5b {
                 }
             }
         }
-
     }
 }
