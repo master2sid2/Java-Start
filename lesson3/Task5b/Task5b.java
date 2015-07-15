@@ -38,7 +38,6 @@ public class Task5b {
                         System.out.println("Ваш элемент массива под индексом " + ind + " :");
                         System.out.println(arr[ind]);
                     }
-
                 }
             }
         }
