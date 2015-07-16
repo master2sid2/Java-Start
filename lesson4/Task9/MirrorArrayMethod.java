@@ -22,17 +22,16 @@ public class MirrorArrayMethod {
         System.out.println("Полученный массив");
         System.out.println(Arrays.toString(arr));
         System.out.println("Перевёрнутый масив");
-        System.out.println(Arrays.toString(mirrorArray(arr)));
+        mirrorArray(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
-    public static int[] mirrorArray(int[] array){
+    public static void mirrorArray(int[] array){
 
         for(int i = 0; i < array.length>>1; i++) {
             int arrSize = array[array.length - i - 1];
             array[array.length - i - 1] = array[i];
             array[i] = arrSize;
         }
-
-        return array;
     }
 }
