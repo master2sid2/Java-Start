@@ -15,7 +15,7 @@ public class MinMaxArray {
 
         Random rnd = new Random();
 
-        int[] arr = new int[10];
+        int[] arr = new int[rnd.nextInt(30)+1];
 
         for(int i = 0; i < arr.length; i++){
 
