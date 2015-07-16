@@ -12,7 +12,7 @@ public class MirrorArrayMethod {
 
     public static void main(String[] args){
 
-        Random rnd = new Random();
+//        Random rnd = new Random();
         int[] arr = {1,2,3,4};
 
 //        for(int i = 0; i < arr.length; i++){
