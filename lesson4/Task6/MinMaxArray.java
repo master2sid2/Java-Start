@@ -46,12 +46,10 @@ public class MinMaxArray {
                 maxInd = i;
 
             }
-
         }
 
         System.out.println("Минимальный элемент массива " + min + " находится по индексу " + minInd);
         System.out.println("Максемальный элемент массива " + max + " находится по индексу " + maxInd);
 
     }
-
 }
