@@ -18,10 +18,11 @@ public class FillArrayBy {
 
         System.out.println("Размер массива: " + arr.length);
         System.out.println("Заполнение массива методом начиная с центра");
-        System.out.println(Arrays.toString(FillArrayByUp(arr)));
+        (FillArrayByUp(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
-    public static int[] FillArrayByUp(int[] array){
+    public static void FillArrayByUp(int[] array){
 
         int mid = array.length / 2;
         int num = 1;
@@ -34,7 +35,5 @@ public class FillArrayBy {
                 array[mid + i] = num;
             num++;
         }
-
-        return array;
     }
 }
