@@ -7,14 +7,9 @@ package lessons4.task2;
 public class DigitDiv {
     public static void main(String[] args){
 
-        int div;
-
         for(int i = 1; i <= 100; i++){
-
             if(i % 3 == 0){
-
                 System.out.print(i + " ");
-
             }
         }
     }

@@ -10,37 +10,25 @@ public class DigitRange {
         System.out.println("Цыкл for: ");
 
         for(int i = 10; i <= 20; i++){
-
             System.out.print(i + " ");
-
         }
 
         System.out.println();
         System.out.println("Цыкл while: ");
 
         int num = 10;
-
         while ( num < 21){
-
             System.out.print(num + " ");
-
             num++;
-
         }
 
         System.out.println();
         System.out.println("Цыкл do while: ");
 
         num = 10;
-
         do{
-
             System.out.print(num + " ");
-
             num++;
-
         } while (num < 21);
-
     }
-
 }

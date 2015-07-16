@@ -9,17 +9,13 @@ public class FillArray {
     public static void main(String[] args){
 
         int[] arr = new int[101];
-
         int num = 100;
 
         for(int i = 0; i <= 100; i++){
-
             arr[i] = num;
             num--;
-
         }
 
         System.out.println(Arrays.toString(arr));
-
     }
 }
