@@ -13,11 +13,11 @@ public class MirrorArrayMethod {
     public static void main(String[] args){
 
         Random rnd = new Random();
-        int[] arr = new int[rnd.nextInt(10)+1];
+        int[] arr = {1,2,3,4};
 
-        for(int i = 0; i < arr.length; i++){
-            arr[i] = rnd.nextInt(100)+1;
-        }
+//        for(int i = 0; i < arr.length; i++){
+//            arr[i] = rnd.nextInt(100)+1;
+//        }
 
         System.out.println("Полученный массив");
         System.out.println(Arrays.toString(arr));
