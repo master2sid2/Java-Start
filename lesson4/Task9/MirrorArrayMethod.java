@@ -28,7 +28,7 @@ public class MirrorArrayMethod {
 
     public static void mirrorArray(int[] array){
 
-        for(int i = 0; i < array.length>>1; i++) {
+        for(int i = 0; i < array.length - i - 1; i++) {
             int arrSize = array[array.length - i - 1];
             array[array.length - i - 1] = array[i];
             array[i] = arrSize;
