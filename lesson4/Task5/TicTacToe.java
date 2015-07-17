@@ -466,25 +466,17 @@ public class TicTacToe {
         char c7 = array[2][0];
         char c8 = array[2][1];
         char c9 = array[2][2];
-
-        if(c1 == 'x' && c2=='x' && c3=='x'){
-                    winStatus = true;
-        } else if (c4 == 'x' && c5=='x' && c6=='x'){
-                    winStatus = true;
-        } else if (c7 == 'x' && c8=='x' && c9=='x'){
-            winStatus = true;
-        } else if (c1 == 'x' && c4=='x' && c7=='x'){
-            winStatus = true;
-        } else if (c2=='x' && c5=='x' && c8=='x'){
-            winStatus = true;
-        } else if (c3=='x' && c6=='x' && c9=='x'){
-            winStatus = true;
-        } else if (c1=='x' && c5=='x' && c9=='x'){
-            winStatus = true;
-        } else if (c3=='x' && c5=='x' && c7=='x'){
-            winStatus = true;
-        } else
-        winStatus=false;
+        if (c1 == 'x' && c2 == 'x' && c3 == 'x' ||
+            c4 == 'x' && c5 == 'x' && c6 == 'x' ||
+            c7 == 'x' && c8 == 'x' && c9 == 'x' ||
+            c1 == 'x' && c4 == 'x' && c7 == 'x' ||
+            c2 == 'x' && c5 == 'x' && c8 == 'x' ||
+            c3 == 'x' && c6 == 'x' && c9 == 'x' ||
+            c1 == 'x' && c5 == 'x' && c9 == 'x' ||
+            c3 == 'x' && c5 == 'x' && c7 == 'x'){
+                winStatus = true;
+            } else
+                winStatus=false;
 
         return winStatus;
     }
@@ -501,21 +493,14 @@ public class TicTacToe {
         char c7 = array[2][0];
         char c8 = array[2][1];
         char c9 = array[2][2];
-        if(c1 == 'o' && c2=='o' && c3=='o'){
-            winStatus = true;
-        } else if (c4 == 'o' && c5=='o' && c6=='o'){
-            winStatus = true;
-        } else if (c7 == 'o' && c8=='o' && c9=='o'){
-            winStatus = true;
-        } else if (c1 == 'o' && c4=='o' && c7=='o'){
-            winStatus = true;
-        } else if (c2=='o' && c5=='o' && c8=='o'){
-            winStatus = true;
-        } else if (c3=='o' && c6=='o' && c9=='o'){
-            winStatus = true;
-        } else if (c1=='o' && c5=='o' && c9=='o'){
-            winStatus = true;
-        } else if (c3=='o' && c5=='o' && c7=='o'){
+        if (c1 == 'o' && c2 == 'o' && c3 == 'o' ||
+        	c4 == 'o' && c5 == 'o' && c6 == 'o' ||
+        	c7 == 'o' && c8 == 'o' && c9 == 'o' ||
+        	c1 == 'o' && c4 == 'o' && c7 == 'o' ||
+        	c2 == 'o' && c5 == 'o' && c8 == 'o' ||
+        	c3 == 'o' && c6 == 'o' && c9 == 'o' ||
+        	c1 == 'o' && c5 == 'o' && c9 == 'o' ||
+        	c3 == 'o' && c5 == 'o' && c7 == 'o'){
             winStatus = true;
         } else
             winStatus=false;
