@@ -44,11 +44,10 @@ public class TicTacToe {
                     } else {
                         switch (cord) {
                             case 1:
-                            	char c1 = field[0][0];
-                                if(c1 == 'o'){
+                                if(field[0][0] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c1 == 'x'){
+                                } else if(field[0][0] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -62,11 +61,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 2:
-                                char c2 = field[0][1];
-                                if(c2 == 'o'){
+                                if(field[0][1] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c2 == 'x'){
+                                } else if(field[0][1] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -80,11 +78,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 3:
-                                char c3 = field[0][2];
-                                if(c3 == 'o'){
+                                if(field[0][2] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c3 == 'x'){
+                                } else if(field[0][2] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -98,11 +95,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 4:
-                                char c4 = field[1][0];
-                                if(c4 == 'o'){
+                                if(field[1][0] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c4 == 'x'){
+                                } else if(field[1][0] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -116,11 +112,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 5:
-                                char c5 = field[1][1];
-                                if(c5 == 'o'){
+                                if(field[1][1] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c5 == 'x'){
+                                } else if(field[1][1] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -134,11 +129,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 6:
-                                char c6 = field[1][2];
-                                if(c6 == 'o'){
+                                if(field[1][2] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c6 == 'x'){
+                                } else if(field[1][2] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -152,11 +146,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 7:
-                                char c7 = field[2][0];
-                                if(c7 == 'o'){
+                                if(field[2][0] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c7 == 'x'){
+                                } else if(field[2][0] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -170,11 +163,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 8:
-                                char c8 = field[2][1];
-                                if(c8 == 'o'){
+                                if(field[2][1] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c8 == 'x'){
+                                } else if(field[2][1] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -188,11 +180,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 9:
-                            	char c9 = field[2][2];
-                                if(c9 == 'o'){
+                                if(field[2][2] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c9 == 'x'){
+                                } else if(field[2][2] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -221,11 +212,10 @@ public class TicTacToe {
                     } else {
                         switch (cord) {
                             case 1:
-                            	char c1 = field[0][0];
-                                if(c1 == 'x'){
+                                if(field[0][0] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c1 == 'o'){
+                                } else if(field[0][0] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -239,11 +229,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 2:
-                            	char c2 = field[0][1];
-                                if(c2 == 'x'){
+                                if(field[0][1] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c2 == 'o'){
+                                } else if(field[0][1] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -257,11 +246,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 3:
-                            	char c3 = field[0][2];
-                                if(c3 == 'x'){
+                                if(field[0][2] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c3 == 'o'){
+                                } else if(field[0][2] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -275,11 +263,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 4:
-                            	char c4 = field[1][0];
-                                if(c4 == 'x'){
+                                if(field[1][0] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c4 == 'o'){
+                                } else if(field[1][0] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -293,11 +280,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 5:
-                            	char c5 = field[1][1];
-                                if(c5 == 'x'){
+                                if(field[1][1] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c5 == 'o'){
+                                } else if(field[1][1] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -311,11 +297,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 6:
-                            	char c6 = field[1][2];
-                                if(c6 == 'x'){
+                                if(field[1][2] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c6 == 'o'){
+                                } else if(field[1][2] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -329,11 +314,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 7:
-                            	char c7 = field[2][0];
-                                if(c7 == 'x'){
+                                if(field[2][0] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c7 == 'o'){
+                                } else if(field[2][0] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -347,11 +331,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 8:
-                            	char c8 = field[2][1];
-                                if(c8 == 'x'){
+                                if(field[2][1] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c8 == 'o'){
+                                } else if(field[2][1] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -365,11 +348,10 @@ public class TicTacToe {
                                 finCount++;
                                 break;
                             case 9:
-                            	char c9 = field[2][2];
-                                if(c9 == 'x'){
+                                if(field[2][2] == 'x'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
-                                } else if(c9 == 'o'){
+                                } else if(field[2][2] == 'o'){
                                     System.out.println("Тут занято, сюда ставить нельзя!");
                                     break;
                                 } else
@@ -457,23 +439,14 @@ public class TicTacToe {
 
         boolean winStatus;
 
-        char c1 = array[0][0];
-        char c2 = array[0][1];
-        char c3 = array[0][2];
-        char c4 = array[1][0];
-        char c5 = array[1][1];
-        char c6 = array[1][2];
-        char c7 = array[2][0];
-        char c8 = array[2][1];
-        char c9 = array[2][2];
-        if (c1 == 'x' && c2 == 'x' && c3 == 'x' ||
-            c4 == 'x' && c5 == 'x' && c6 == 'x' ||
-            c7 == 'x' && c8 == 'x' && c9 == 'x' ||
-            c1 == 'x' && c4 == 'x' && c7 == 'x' ||
-            c2 == 'x' && c5 == 'x' && c8 == 'x' ||
-            c3 == 'x' && c6 == 'x' && c9 == 'x' ||
-            c1 == 'x' && c5 == 'x' && c9 == 'x' ||
-            c3 == 'x' && c5 == 'x' && c7 == 'x'){
+        if (array[0][0] == 'x' && array[0][1] == 'x' && array[0][2] == 'x' ||
+        	array[1][0] == 'x' && array[1][1] == 'x' && array[1][2] == 'x' ||
+        	array[2][0] == 'x' && array[2][1] == 'x' && array[2][2] == 'x' ||
+            array[0][0] == 'x' && array[1][0] == 'x' && array[2][0] == 'x' ||
+            array[0][1] == 'x' && array[1][1] == 'x' && array[2][1] == 'x' ||
+            array[0][2] == 'x' && array[1][2] == 'x' && array[2][2] == 'x' ||
+            array[0][0] == 'x' && array[1][1] == 'x' && array[2][2] == 'x' ||
+            array[0][2] == 'x' && array[1][1] == 'x' && array[2][0] == 'x'){
                 winStatus = true;
             } else
                 winStatus=false;
@@ -484,23 +457,15 @@ public class TicTacToe {
     public static boolean winGameO(char[][] array){
 
         boolean winStatus;
-        char c1 = array[0][0];
-        char c2 = array[0][1];
-        char c3 = array[0][2];
-        char c4 = array[1][0];
-        char c5 = array[1][1];
-        char c6 = array[1][2];
-        char c7 = array[2][0];
-        char c8 = array[2][1];
-        char c9 = array[2][2];
-        if (c1 == 'o' && c2 == 'o' && c3 == 'o' ||
-        	c4 == 'o' && c5 == 'o' && c6 == 'o' ||
-        	c7 == 'o' && c8 == 'o' && c9 == 'o' ||
-        	c1 == 'o' && c4 == 'o' && c7 == 'o' ||
-        	c2 == 'o' && c5 == 'o' && c8 == 'o' ||
-        	c3 == 'o' && c6 == 'o' && c9 == 'o' ||
-        	c1 == 'o' && c5 == 'o' && c9 == 'o' ||
-        	c3 == 'o' && c5 == 'o' && c7 == 'o'){
+
+        if (array[0][0] == 'o' && array[0][1] == 'o' && array[0][2] == 'o' ||
+        	array[1][0] == 'o' && array[1][1] == 'o' && array[1][2] == 'o' ||
+        	array[2][0] == 'o' && array[2][1] == 'o' && array[2][2] == 'o' ||
+        	array[0][0] == 'o' && array[1][0] == 'o' && array[2][0] == 'o' ||
+        	array[0][1] == 'o' && array[1][1] == 'o' && array[2][1] == 'o' ||
+        	array[0][2] == 'o' && array[1][2] == 'o' && array[2][2] == 'o' ||
+        	array[0][0] == 'o' && array[1][1] == 'o' && array[2][2] == 'o' ||
+        	array[0][2] == 'o' && array[1][1] == 'o' && array[2][0] == 'o'){
             winStatus = true;
         } else
             winStatus=false;
