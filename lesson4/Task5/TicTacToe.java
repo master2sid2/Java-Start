@@ -315,6 +315,9 @@ public class TicTacToe {
                 } else if (winGameO(field)){
                     System.out.println("Победил O");
                     break;
+                } else if (finCount == 9){
+                System.out.println("Ничья")
+                break;
                 }
             }    }
 
