@@ -9,7 +9,7 @@ import java.util.Random;
  * начиная с центра массива, например,
  * [5,4,3,2,1,0,1,2,3,4,5].
  */
-public class FillArrayBy {
+public class FillArrayByUp {
     public static void main(String[] args){
 
         Random rnd = new Random();
