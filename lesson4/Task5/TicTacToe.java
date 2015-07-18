@@ -287,24 +287,19 @@ public class TicTacToe {
     }
 
     public static void fillFieldsNewGame(char[][] array) {
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++)
             for (int j = 0; j < array.length; j++) {
                 array[i][j] = '.';
             }
-        }
     }
 
     public static int[][] printFieldCord() {
         int[][] array = new int[3][3];
         int num = 1 ;
 
-        for(int i = 0; i < array.length; i++){
-            for(int k = 0; k < array.length; k++){
-                array[i][k]=num++;
-            }
-        }
         for (int[] anArray : array) {
             for (int j = 0; j < array.length; j++) {
+                anArray[j]=num++;
                 System.out.print(anArray[j] + "\t");
             }
             System.out.println();
