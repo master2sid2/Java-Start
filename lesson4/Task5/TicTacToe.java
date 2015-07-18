@@ -42,7 +42,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[0][0] = 'x';
                             printField(field);
-                            x = !turn(field[0][0]);
+                            x = false;
                             finCount++;
                             break;
                         case 2:
@@ -54,7 +54,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[0][1] = 'x';
                             printField(field);
-                            x = !turn(field[0][1]);
+                            x = false;
                             finCount++;
                             break;
                         case 3:
@@ -66,7 +66,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[0][2] = 'x';
                             printField(field);
-                            x = !turn(field[0][2]);
+                            x = false;
                             finCount++;
                             break;
                         case 4:
@@ -78,7 +78,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[1][0] = 'x';
                             printField(field);
-                            x = !turn(field[1][0]);
+                            x = false;
                             finCount++;
                             break;
                         case 5:
@@ -90,7 +90,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[1][1] = 'x';
                             printField(field);
-                            x = !turn(field[1][1]);
+                            x = false;
                             finCount++;
                             break;
                         case 6:
@@ -102,7 +102,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[1][2] = 'x';
                             printField(field);
-                            x = !turn(field[1][2]);
+                            x = false;
                             finCount++;
                             break;
                         case 7:
@@ -114,7 +114,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[2][0] = 'x';
                             printField(field);
-                            x = !turn(field[2][0]);
+                            x = false;
                             finCount++;
                             break;
                         case 8:
@@ -126,7 +126,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[2][1] = 'x';
                             printField(field);
-                            x = !turn(field[2][1]);
+                            x = false;
                             finCount++;
                             break;
                         case 9:
@@ -138,7 +138,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[2][2] = 'x';
                             printField(field);
-                            x = !turn(field[2][2]);
+                            x = false;
                             finCount++;
                             break;
                         default:
@@ -165,7 +165,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[0][0] = 'o';
                             printField(field);
-                            x = !turn(field[0][0]);
+                            x = true;
                             finCount++;
                             break;
                         case 2:
@@ -177,7 +177,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[0][1] = 'o';
                             printField(field);
-                            x = !turn(field[0][1]);
+                            x = true;
                             finCount++;
                             break;
                         case 3:
@@ -189,7 +189,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[0][2] = 'o';
                             printField(field);
-                            x = !turn(field[0][2]);
+                            x = true;
                             finCount++;
                             break;
                         case 4:
@@ -201,7 +201,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[1][0] = 'o';
                             printField(field);
-                            x = !turn(field[1][0]);
+                            x = true;
                             finCount++;
                             break;
                         case 5:
@@ -213,7 +213,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[1][1] = 'o';
                             printField(field);
-                            x = !turn(field[1][1]);
+                            x = true;
                             finCount++;
                             break;
                         case 6:
@@ -225,7 +225,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[1][2] = 'o';
                             printField(field);
-                            x = !turn(field[1][2]);
+                            x = true;
                             finCount++;
                             break;
                         case 7:
@@ -237,7 +237,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[2][0] = 'o';
                             printField(field);
-                            x = !turn(field[2][0]);
+                            x = true;
                             finCount++;
                             break;
                         case 8:
@@ -249,7 +249,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[2][1] = 'o';
                             printField(field);
-                            x = !turn(field[2][1]);
+                            x = true;
                             finCount++;
                             break;
                         case 9:
@@ -261,7 +261,7 @@ public class TicTacToe {
                             System.out.println("----------");
                             field[2][2] = 'o';
                             printField(field);
-                            x = !turn(field[2][2]);
+                            x = true;
                             finCount++;
                             break;
                         default:
@@ -323,13 +323,6 @@ public class TicTacToe {
             System.out.println();
         }
     }
-
-    public static boolean turn(char c) {
-        boolean checkTurn;
-        checkTurn = c == 'x';
-        return checkTurn;
-    }
-
 
     public static boolean winGameX(char[][] array) {
         boolean winStatus;
