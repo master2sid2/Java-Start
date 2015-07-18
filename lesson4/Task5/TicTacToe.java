@@ -47,14 +47,10 @@ public class TicTacToe {
                 } else {
                     switch (cord) {
                         case 1:
-                            if(field[0][0] == 'o'){
+                            if (field[0][0] == 'o' || field[0][0] == 'x') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[0][0] == 'x'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[0][0] = 'x';
@@ -64,14 +60,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 2:
-                            if(field[0][1] == 'o'){
+                            if (field[0][1] == 'o' || field[0][1] == 'x') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[0][1] == 'x'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[0][1] = 'x';
@@ -81,14 +73,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 3:
-                            if(field[0][2] == 'o'){
+                            if (field[0][2] == 'o' || field[0][2] == 'x') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[0][2] == 'x'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[0][2] = 'x';
@@ -98,14 +86,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 4:
-                            if(field[1][0] == 'o'){
+                            if (field[1][0] == 'o' || field[1][0] == 'x') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[1][0] == 'x'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[1][0] = 'x';
@@ -115,14 +99,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 5:
-                            if(field[1][1] == 'o'){
+                            if (field[1][1] == 'o' || field[1][1] == 'x') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[1][1] == 'x'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[1][1] = 'x';
@@ -132,14 +112,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 6:
-                            if(field[1][2] == 'o'){
+                            if (field[1][2] == 'o' || field[1][2] == 'x') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[1][2] == 'x'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[1][2] = 'x';
@@ -149,14 +125,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 7:
-                            if(field[2][0] == 'o'){
+                            if (field[2][0] == 'o' || field[2][0] == 'x') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[2][0] == 'x'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[2][0] = 'x';
@@ -166,14 +138,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 8:
-                            if(field[2][1] == 'o'){
+                            if (field[2][1] == 'o' || field[2][1] == 'x') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[2][1] == 'x'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[2][1] = 'x';
@@ -183,14 +151,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 9:
-                            if(field[2][2] == 'o'){
+                            if (field[2][2] == 'o' || field[2][2] == 'x') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[2][2] == 'x'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[2][2] = 'x';
@@ -215,14 +179,10 @@ public class TicTacToe {
                 } else {
                     switch (cord) {
                         case 1:
-                            if(field[0][0] == 'x'){
+                            if (field[0][0] == 'x' || field[0][0] == 'o') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[0][0] == 'o'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[0][0] = 'o';
@@ -232,14 +192,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 2:
-                            if(field[0][1] == 'x'){
+                            if (field[0][1] == 'x' || field[0][1] == 'o') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[0][1] == 'o'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[0][1] = 'o';
@@ -249,14 +205,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 3:
-                            if(field[0][2] == 'x'){
+                            if (field[0][2] == 'x' || field[0][2] == 'o') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[0][2] == 'o'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[0][2] = 'o';
@@ -266,14 +218,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 4:
-                            if(field[1][0] == 'x'){
+                            if (field[1][0] == 'x' || field[1][0] == 'o') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[1][0] == 'o'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[1][0] = 'o';
@@ -283,14 +231,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 5:
-                            if(field[1][1] == 'x'){
+                            if (field[1][1] == 'x' || field[1][1] == 'o') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[1][1] == 'o'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[1][1] = 'o';
@@ -300,14 +244,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 6:
-                            if(field[1][2] == 'x'){
+                            if (field[1][2] == 'x' || field[1][2] == 'o') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[1][2] == 'o'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[1][2] = 'o';
@@ -317,14 +257,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 7:
-                            if(field[2][0] == 'x'){
+                            if (field[2][0] == 'x' || field[2][0] == 'o') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[2][0] == 'o'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[2][0] = 'o';
@@ -334,14 +270,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 8:
-                            if(field[2][1] == 'x'){
+                            if (field[2][1] == 'x' || field[2][1] == 'o') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[2][1] == 'o'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[2][1] = 'o';
@@ -351,14 +283,10 @@ public class TicTacToe {
                             finCount++;
                             break;
                         case 9:
-                            if(field[2][2] == 'x'){
+                            if (field[2][2] == 'x' || field[2][2] == 'o') {
                                 System.out.println("Тут занято, сюда ставить нельзя!");
                                 break;
-                            } else if(field[2][2] == 'o'){
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                System.out.println("-------------------");
+                            } else System.out.println("-------------------");
                             printFieldCord();
                             System.out.println("-------------------");
                             field[2][2] = 'o';
