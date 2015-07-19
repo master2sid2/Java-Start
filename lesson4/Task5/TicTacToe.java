@@ -286,14 +286,14 @@ public class TicTacToe {
         }
     }
 
-    public static void fillFieldsNewGame(char[][] array) {
+    static void fillFieldsNewGame(char[][] array) {
         for (int i = 0; i < array.length; i++)
             for (int j = 0; j < array.length; j++) {
                 array[i][j] = '.';
             }
     }
 
-    public static int[][] printFieldCord() {
+    static int[][] printFieldCord() {
         int[][] array = new int[3][3];
         int num = 1 ;
 
@@ -301,22 +301,19 @@ public class TicTacToe {
             for (int j = 0; j < array.length; j++) {
                 anArray[j]=num++;
                 System.out.print(anArray[j] + "\t");
-            }
-            System.out.println();
-        }
-        return array;
+            } System.out.println();
+        } return array;
     }
 
-    public static void printField(char[][] array) {
+    static void printField(char[][] array) {
         for (char[] anArray : array) {
             for (int j = 0; j < array.length; j++) {
                 System.out.print(anArray[j] + "\t");
-            }
-            System.out.println();
+            } System.out.println();
         }
     }
 
-    public static boolean winGameX(char[][] array) {
+    static boolean winGameX(char[][] array) {
         boolean winStatus;
         winStatus = array[0][0] == 'x' && array[0][1] == 'x' && array[0][2] == 'x' ||
                 array[1][0] == 'x' && array[1][1] == 'x' && array[1][2] == 'x' ||
@@ -329,7 +326,7 @@ public class TicTacToe {
         return winStatus;
     }
 
-    public static boolean winGameO(char[][] array) {
+    static boolean winGameO(char[][] array) {
         boolean winStatus;
         winStatus = array[0][0] == 'o' && array[0][1] == 'o' && array[0][2] == 'o' ||
                 array[1][0] == 'o' && array[1][1] == 'o' && array[1][2] == 'o' ||
