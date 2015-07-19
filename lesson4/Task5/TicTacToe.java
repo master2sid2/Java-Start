@@ -270,11 +270,11 @@ public class TicTacToe {
                     }
                 }
             }
-            if (winGameX(field)) {
+            if (winGame(field)) {
                 scn.close();
                 System.out.println("Победил X");
                 break;
-            } else if (winGameO(field)) {
+            } else if (winGame(field)) {
                 scn.close();
                 System.out.println("Победил O");
                 break;
@@ -312,29 +312,29 @@ public class TicTacToe {
         }
     }
 
-    static boolean winGameX(char[][] array) {
-        boolean winStatus;
-        winStatus = array[0][0] == 'x' && array[0][1] == 'x' && array[0][2] == 'x' ||
-                array[1][0] == 'x' && array[1][1] == 'x' && array[1][2] == 'x' ||
-                array[2][0] == 'x' && array[2][1] == 'x' && array[2][2] == 'x' ||
-                array[0][0] == 'x' && array[1][0] == 'x' && array[2][0] == 'x' ||
-                array[0][1] == 'x' && array[1][1] == 'x' && array[2][1] == 'x' ||
-                array[0][2] == 'x' && array[1][2] == 'x' && array[2][2] == 'x' ||
-                array[0][0] == 'x' && array[1][1] == 'x' && array[2][2] == 'x' ||
-                array[0][2] == 'x' && array[1][1] == 'x' && array[2][0] == 'x';
-        return winStatus;
-    }
+    static boolean winGame(char[][] array) {
+        boolean winStatus = false;
+        for (int i = 0; i < 3; i++) {
+            if (array[i][0] == array[i][1] && array[i][1] == array[i][2]
+                    && array[i][0] != '.') {
+                winStatus = true;
+                break;
+            }
+        }
+        for (int i = 0; i < 3; i++) {
+            if (array[0][i] == array[1][i] && array[1][i] == array[2][i]
+                    && array[0][i] != '.') {
+                winStatus = true;
+                break;
+            }
+        }
+        if (array[0][0] == array[1][1] && array[1][1] == array[2][2]
+                && array[0][0] != '.')
+            winStatus = true;
+        if (array[0][2] == array[1][1] && array[1][1] == array[2][0]
+                && array[0][2] != '.')
+            winStatus = true;
 
-    static boolean winGameO(char[][] array) {
-        boolean winStatus;
-        winStatus = array[0][0] == 'o' && array[0][1] == 'o' && array[0][2] == 'o' ||
-                array[1][0] == 'o' && array[1][1] == 'o' && array[1][2] == 'o' ||
-                array[2][0] == 'o' && array[2][1] == 'o' && array[2][2] == 'o' ||
-                array[0][0] == 'o' && array[1][0] == 'o' && array[2][0] == 'o' ||
-                array[0][1] == 'o' && array[1][1] == 'o' && array[2][1] == 'o' ||
-                array[0][2] == 'o' && array[1][2] == 'o' && array[2][2] == 'o' ||
-                array[0][0] == 'o' && array[1][1] == 'o' && array[2][2] == 'o' ||
-                array[0][2] == 'o' && array[1][1] == 'o' && array[2][0] == 'o';
         return winStatus;
     }
 }
