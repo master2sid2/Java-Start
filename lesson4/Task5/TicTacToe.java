@@ -295,8 +295,7 @@ public class TicTacToe {
 
     static int[][] printFieldCord() {
         int[][] array = new int[3][3];
-        int num = 1 ;
-
+        int num = 1;
         for (int[] anArray : array) {
             for (int j = 0; j < array.length; j++) {
                 anArray[j]=num++;
