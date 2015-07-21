@@ -20,263 +20,139 @@ public class TicTacToe {
         printField(field);
 
         int cord, finCount = 0;
-        boolean x = true;
+        char plChar = 'x';
 
         while (true) {
-            if (x) {
-                System.out.println("Сейчас ход \"х\"");
-                System.out.println("Введите координату точки куда хотите поставить \"x\"");
-                cord = scn.nextInt();
 
-                if (cord > 9 && cord < 9) {
-                    System.out.println("Неверный ввод");
-                    continue;
-                } else {
-                    switch (cord) {
-                        case 1:
-                            if (field[0][0] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[0][0] = 'x';
-                            printField(field);
-                            x = false;
-                            finCount++;
-                            break;
-                        case 2:
-                            if (field[0][1] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[0][1] = 'x';
-                            printField(field);
-                            x = false;
-                            finCount++;
-                            break;
-                        case 3:
-                            if (field[0][2] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[0][2] = 'x';
-                            printField(field);
-                            x = false;
-                            finCount++;
-                            break;
-                        case 4:
-                            if (field[1][0] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[1][0] = 'x';
-                            printField(field);
-                            x = false;
-                            finCount++;
-                            break;
-                        case 5:
-                            if (field[1][1] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[1][1] = 'x';
-                            printField(field);
-                            x = false;
-                            finCount++;
-                            break;
-                        case 6:
-                            if (field[1][2] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[1][2] = 'x';
-                            printField(field);
-                            x = false;
-                            finCount++;
-                            break;
-                        case 7:
-                            if (field[2][0] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[2][0] = 'x';
-                            printField(field);
-                            x = false;
-                            finCount++;
-                            break;
-                        case 8:
-                            if (field[2][1] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[2][1] = 'x';
-                            printField(field);
-                            x = false;
-                            finCount++;
-                            break;
-                        case 9:
-                            if (field[2][2] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[2][2] = 'x';
-                            printField(field);
-                            x = false;
-                            finCount++;
-                            break;
-                        default:
-                            System.out.println("0_o");
-                            break;
-                    }
-                }
+            System.out.println("Сейчас ход " + "\"" + plChar + "\"");
+            System.out.println("Введите координату точки куда хотите поставить " + "\"" + plChar + "\"");
+            cord = scn.nextInt();
+
+            if (cord > 9 && cord < 9) {
+                System.out.println("Неверный ввод");
+                continue;
             } else {
-                System.out.println("Сейчас ход \"o\"");
-                System.out.println("Введите координату точки куда хотите поставить \"o\"");
-                cord = scn.nextInt();
-
-                if (cord > 9 && cord < 9) {
-                    System.out.println("Неверный ввод");
-                    continue;
-                } else {
-                    switch (cord) {
-                        case 1:
-                            if (field[0][0] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[0][0] = 'o';
-                            printField(field);
-                            x = true;
-                            finCount++;
+                switch (cord) {
+                    case 1:
+                        if (field[0][0] != '.') {
+                            System.out.println("Тут занято, сюда ставить нельзя!");
                             break;
-                        case 2:
-                            if (field[0][1] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[0][1] = 'o';
-                            printField(field);
-                            x = true;
-                            finCount++;
+                        } else
+                            printFieldCord();
+                        System.out.println("----------");
+                        field[0][0] = plChar;
+                        printField(field);
+                        placeSymbol(plChar);
+                        finCount++;
+                        break;
+                    case 2:
+                        if (field[0][1] != '.') {
+                            System.out.println("Тут занято, сюда ставить нельзя!");
                             break;
-                        case 3:
-                            if (field[0][2] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[0][2] = 'o';
-                            printField(field);
-                            x = true;
-                            finCount++;
+                        } else
+                            printFieldCord();
+                        System.out.println("----------");
+                        field[0][1] = plChar;
+                        printField(field);
+                        placeSymbol(plChar);
+                        finCount++;
+                        break;
+                    case 3:
+                        if (field[0][2] != '.') {
+                            System.out.println("Тут занято, сюда ставить нельзя!");
                             break;
-                        case 4:
-                            if (field[1][0] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[1][0] = 'o';
-                            printField(field);
-                            x = true;
-                            finCount++;
+                        } else
+                            printFieldCord();
+                        System.out.println("----------");
+                        field[0][2] = plChar;
+                        printField(field);
+                        placeSymbol(plChar);
+                        finCount++;
+                        break;
+                    case 4:
+                        if (field[1][0] != '.') {
+                            System.out.println("Тут занято, сюда ставить нельзя!");
                             break;
-                        case 5:
-                            if (field[1][1] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[1][1] = 'o';
-                            printField(field);
-                            x = true;
-                            finCount++;
+                        } else
+                            printFieldCord();
+                        System.out.println("----------");
+                        field[1][0] = plChar;
+                        printField(field);
+                        placeSymbol(plChar);
+                        finCount++;
+                        break;
+                    case 5:
+                        if (field[1][1] != '.') {
+                            System.out.println("Тут занято, сюда ставить нельзя!");
                             break;
-                        case 6:
-                            if (field[1][2] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[1][2] = 'o';
-                            printField(field);
-                            x = true;
-                            finCount++;
+                        } else
+                            printFieldCord();
+                        System.out.println("----------");
+                        field[1][1] = plChar;
+                        printField(field);
+                        placeSymbol(plChar);
+                        finCount++;
+                        break;
+                    case 6:
+                        if (field[1][2] != '.') {
+                            System.out.println("Тут занято, сюда ставить нельзя!");
                             break;
-                        case 7:
-                            if (field[2][0] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[2][0] = 'o';
-                            printField(field);
-                            x = true;
-                            finCount++;
+                        } else
+                            printFieldCord();
+                        System.out.println("----------");
+                        field[1][2] = plChar;
+                        printField(field);
+                        placeSymbol(plChar);
+                        finCount++;
+                        break;
+                    case 7:
+                        if (field[2][0] != '.') {
+                            System.out.println("Тут занято, сюда ставить нельзя!");
                             break;
-                        case 8:
-                            if (field[2][1] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[2][1] = 'o';
-                            printField(field);
-                            x = true;
-                            finCount++;
+                        } else
+                            printFieldCord();
+                        System.out.println("----------");
+                        field[2][0] = plChar;
+                        printField(field);
+                        placeSymbol(plChar);
+                        finCount++;
+                        break;
+                    case 8:
+                        if (field[2][1] != '.') {
+                            System.out.println("Тут занято, сюда ставить нельзя!");
                             break;
-                        case 9:
-                            if (field[2][2] != '.') {
-                                System.out.println("Тут занято, сюда ставить нельзя!");
-                                break;
-                            } else
-                                printFieldCord();
-                            System.out.println("----------");
-                            field[2][2] = 'o';
-                            printField(field);
-                            x = true;
-                            finCount++;
+                        } else
+                            printFieldCord();
+                        System.out.println("----------");
+                        field[2][1] = plChar;
+                        printField(field);
+                        placeSymbol(plChar);
+                        finCount++;
+                        break;
+                    case 9:
+                        if (field[2][2] != '.') {
+                            System.out.println("Тут занято, сюда ставить нельзя!");
                             break;
-                        default:
-                            System.out.println("0_o");
-                            break;
-                    }
+                        } else
+                            printFieldCord();
+                        System.out.println("----------");
+                        field[2][2] = plChar;
+                        printField(field);
+                        placeSymbol(plChar);
+                        finCount++;
+                        break;
+                    default:
+                        System.out.println("0_o");
+                        break;
                 }
             }
+
             if (winGame(field)) {
                 scn.close();
-                System.out.println("Победил X");
-                break;
-            } else if (winGame(field)) {
-                scn.close();
-                System.out.println("Победил O");
+                if (plChar=='x')
+                    plChar = 'o';
+                else plChar = 'x';
+                System.out.println("Победил "  + "\"" + plChar + "\"");
                 break;
             } else if (finCount == 9) {
                 scn.close();
@@ -284,6 +160,12 @@ public class TicTacToe {
                 break;
             }
         }
+    }
+
+    static void placeSymbol(char c){
+        if(c == 'x')
+            c = 'o';
+        else c = 'x';
     }
 
     static void fillFieldsNewGame(char[][] array) {
@@ -298,17 +180,20 @@ public class TicTacToe {
         int num = 1;
         for (int[] anArray : array) {
             for (int j = 0; j < array.length; j++) {
-                anArray[j]=num++;
+                anArray[j] = num++;
                 System.out.print(anArray[j] + "\t");
-            } System.out.println();
-        } return array;
+            }
+            System.out.println();
+        }
+        return array;
     }
 
     static void printField(char[][] array) {
         for (char[] anArray : array) {
             for (int j = 0; j < array.length; j++) {
                 System.out.print(anArray[j] + "\t");
-            } System.out.println();
+            }
+            System.out.println();
         }
     }
 
