@@ -39,94 +39,31 @@ public class TicTacToe {
             } else {
                 switch (cord) {
                     case 1:
-                        if (field[0][0] != '.') {
-                            System.out.println("Тут занято, сюда ставить нельзя!");
-                            break;
-                        } else
-                            printFieldCord();
-                        System.out.println("----------");
-                        field[0][0] = plChar;
-                        caseTurn(finCount, field, plChar);
+                        caseTurn(finCount, field, plChar, 0, 0);
                         break;
                     case 2:
-                        if (field[0][1] != '.') {
-                            System.out.println("Тут занято, сюда ставить нельзя!");
-                            break;
-                        } else
-                            printFieldCord();
-                        System.out.println("----------");
-                        field[0][1] = plChar;
-                        caseTurn(finCount,field,plChar);
+                        caseTurn(finCount,field,plChar, 0, 1);
                         break;
                     case 3:
-                        if (field[0][2] != '.') {
-                            System.out.println("Тут занято, сюда ставить нельзя!");
-                            break;
-                        } else
-                            printFieldCord();
-                        System.out.println("----------");
-                        field[0][2] = plChar;
-                        caseTurn(finCount,field,plChar);
+                        caseTurn(finCount,field,plChar, 0, 2);
                         break;
                     case 4:
-                        if (field[1][0] != '.') {
-                            System.out.println("Тут занято, сюда ставить нельзя!");
-                            break;
-                        } else
-                            printFieldCord();
-                        System.out.println("----------");
-                        field[1][0] = plChar;
-                        caseTurn(finCount,field,plChar);
+                        caseTurn(finCount,field,plChar, 1, 0);
                         break;
                     case 5:
-                        if (field[1][1] != '.') {
-                            System.out.println("Тут занято, сюда ставить нельзя!");
-                            break;
-                        } else
-                            printFieldCord();
-                        System.out.println("----------");
-                        field[1][1] = plChar;
-                        caseTurn(finCount,field,plChar);
+                        caseTurn(finCount,field,plChar, 1, 1);
                         break;
                     case 6:
-                        if (field[1][2] != '.') {
-                            System.out.println("Тут занято, сюда ставить нельзя!");
-                            break;
-                        } else
-                            printFieldCord();
-                        System.out.println("----------");
-                        field[1][2] = plChar;
-                        caseTurn(finCount,field,plChar);
+                        caseTurn(finCount,field,plChar, 1, 2);
                         break;
                     case 7:
-                        if (field[2][0] != '.') {
-                            System.out.println("Тут занято, сюда ставить нельзя!");
-                            break;
-                        } else
-                            printFieldCord();
-                        System.out.println("----------");
-                        field[2][0] = plChar;
-                        caseTurn(finCount,field,plChar);
+                        caseTurn(finCount,field,plChar, 2, 0);
                         break;
                     case 8:
-                        if (field[2][1] != '.') {
-                            System.out.println("Тут занято, сюда ставить нельзя!");
-                            break;
-                        } else
-                            printFieldCord();
-                        System.out.println("----------");
-                        field[2][1] = plChar;
-                        caseTurn(finCount,field,plChar);
+                        caseTurn(finCount,field,plChar, 2, 1);
                         break;
                     case 9:
-                        if (field[2][2] != '.') {
-                            System.out.println("Тут занято, сюда ставить нельзя!");
-                            break;
-                        } else
-                            printFieldCord();
-                        System.out.println("----------");
-                        field[2][2] = plChar;
-                        caseTurn(finCount,field,plChar);
+                        caseTurn(finCount,field,plChar, 2, 2);
                         break;
                     default:
                         System.out.println("0_o");
@@ -149,7 +86,13 @@ public class TicTacToe {
         }
     }
 
-    static void caseTurn(int num, char[][] array, char c){
+    static void caseTurn(int num, char[][] array, char c, int x, int y){
+        if (array[x][y] != '.') {
+            System.out.println("Тут занято, сюда ставить нельзя!");
+        } else
+            printFieldCord();
+        System.out.println("----------");
+        array[x][y] = c;
         printField(array);
         placeSymbol(c);
         num++;
