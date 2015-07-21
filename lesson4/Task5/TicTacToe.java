@@ -38,41 +38,37 @@ public class TicTacToe {
                         caseTurn(finCount, field, plChar, 0, 0);
                         break;
                     case 2:
-                        caseTurn(finCount,field,plChar, 0, 1);
+                        caseTurn(finCount, field, plChar, 0, 1);
                         break;
                     case 3:
-                        caseTurn(finCount,field,plChar, 0, 2);
+                        caseTurn(finCount, field, plChar, 0, 2);
                         break;
                     case 4:
-                        caseTurn(finCount,field,plChar, 1, 0);
+                        caseTurn(finCount, field, plChar, 1, 0);
                         break;
                     case 5:
-                        caseTurn(finCount,field,plChar, 1, 1);
+                        caseTurn(finCount, field, plChar, 1, 1);
                         break;
                     case 6:
-                        caseTurn(finCount,field,plChar, 1, 2);
+                        caseTurn(finCount, field, plChar, 1, 2);
                         break;
                     case 7:
-                        caseTurn(finCount,field,plChar, 2, 0);
+                        caseTurn(finCount, field, plChar, 2, 0);
                         break;
                     case 8:
-                        caseTurn(finCount,field,plChar, 2, 1);
+                        caseTurn(finCount, field, plChar, 2, 1);
                         break;
                     case 9:
-                        caseTurn(finCount,field,plChar, 2, 2);
+                        caseTurn(finCount, field, plChar, 2, 2);
                         break;
                     default:
                         System.out.println("0_o");
                         break;
                 }
             }
-
             if (winGame(field)) {
                 scn.close();
-                if (plChar=='x')
-                    plChar = 'o';
-                else plChar = 'x';
-                System.out.println("Победил "  + "\"" + plChar + "\"");
+                System.out.println("Победил " + "\"" + plChar + "\"");
                 break;
             } else if (finCount == 9) {
                 scn.close();
