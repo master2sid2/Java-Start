@@ -19,14 +19,19 @@ public class TicTacToe {
         fillFieldsNewGame(field);
         printField(field);
 
-        int cord, finCount = 0;
+        int cord = 0, finCount = 0;
         char plChar = 'x';
 
         while (true) {
 
             System.out.println("Сейчас ход " + "\"" + plChar + "\"");
             System.out.println("Введите координату точки куда хотите поставить " + "\"" + plChar + "\"");
-            cord = scn.nextInt();
+
+            try{cord = scn.nextInt();
+            } catch (Exception e){
+                System.out.println("Неверный ввод");
+                break;
+            }
 
             if (cord > 9 && cord < 9) {
                 System.out.println("Неверный ввод");
@@ -41,9 +46,7 @@ public class TicTacToe {
                             printFieldCord();
                         System.out.println("----------");
                         field[0][0] = plChar;
-                        printField(field);
-                        placeSymbol(plChar);
-                        finCount++;
+                        caseTurn(finCount, field, plChar);
                         break;
                     case 2:
                         if (field[0][1] != '.') {
@@ -53,9 +56,7 @@ public class TicTacToe {
                             printFieldCord();
                         System.out.println("----------");
                         field[0][1] = plChar;
-                        printField(field);
-                        placeSymbol(plChar);
-                        finCount++;
+                        caseTurn(finCount,field,plChar);
                         break;
                     case 3:
                         if (field[0][2] != '.') {
@@ -65,9 +66,7 @@ public class TicTacToe {
                             printFieldCord();
                         System.out.println("----------");
                         field[0][2] = plChar;
-                        printField(field);
-                        placeSymbol(plChar);
-                        finCount++;
+                        caseTurn(finCount,field,plChar);
                         break;
                     case 4:
                         if (field[1][0] != '.') {
@@ -77,9 +76,7 @@ public class TicTacToe {
                             printFieldCord();
                         System.out.println("----------");
                         field[1][0] = plChar;
-                        printField(field);
-                        placeSymbol(plChar);
-                        finCount++;
+                        caseTurn(finCount,field,plChar);
                         break;
                     case 5:
                         if (field[1][1] != '.') {
@@ -89,9 +86,7 @@ public class TicTacToe {
                             printFieldCord();
                         System.out.println("----------");
                         field[1][1] = plChar;
-                        printField(field);
-                        placeSymbol(plChar);
-                        finCount++;
+                        caseTurn(finCount,field,plChar);
                         break;
                     case 6:
                         if (field[1][2] != '.') {
@@ -101,9 +96,7 @@ public class TicTacToe {
                             printFieldCord();
                         System.out.println("----------");
                         field[1][2] = plChar;
-                        printField(field);
-                        placeSymbol(plChar);
-                        finCount++;
+                        caseTurn(finCount,field,plChar);
                         break;
                     case 7:
                         if (field[2][0] != '.') {
@@ -113,9 +106,7 @@ public class TicTacToe {
                             printFieldCord();
                         System.out.println("----------");
                         field[2][0] = plChar;
-                        printField(field);
-                        placeSymbol(plChar);
-                        finCount++;
+                        caseTurn(finCount,field,plChar);
                         break;
                     case 8:
                         if (field[2][1] != '.') {
@@ -125,9 +116,7 @@ public class TicTacToe {
                             printFieldCord();
                         System.out.println("----------");
                         field[2][1] = plChar;
-                        printField(field);
-                        placeSymbol(plChar);
-                        finCount++;
+                        caseTurn(finCount,field,plChar);
                         break;
                     case 9:
                         if (field[2][2] != '.') {
@@ -137,9 +126,7 @@ public class TicTacToe {
                             printFieldCord();
                         System.out.println("----------");
                         field[2][2] = plChar;
-                        printField(field);
-                        placeSymbol(plChar);
-                        finCount++;
+                        caseTurn(finCount,field,plChar);
                         break;
                     default:
                         System.out.println("0_o");
@@ -160,6 +147,12 @@ public class TicTacToe {
                 break;
             }
         }
+    }
+
+    static void caseTurn(int num, char[][] array, char c){
+        printField(array);
+        placeSymbol(c);
+        num++;
     }
 
     static void placeSymbol(char c){
