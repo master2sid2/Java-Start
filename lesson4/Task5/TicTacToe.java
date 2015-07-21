@@ -22,11 +22,11 @@ public class TicTacToe {
 
         int cord;
         char plChar;
-        int[][] arrTmp = new int[2][1];
+        int[][] turnArr = new int[2][1];
 
         while (true) {
 
-            if(arrTmp[0][0] == 0)
+            if(turnArr[0][0] == 0)
                 plChar = 'x';
             else plChar = 'o';
 
@@ -41,31 +41,31 @@ public class TicTacToe {
             } else {
                 switch (cord) {
                     case 1:
-                        caseTurn(arrTmp, field, plChar, 0, 0);
+                        caseTurn(turnArr, field, plChar, 0, 0);
                         break;
                     case 2:
-                        caseTurn(arrTmp, field, plChar, 0, 1);
+                        caseTurn(turnArr, field, plChar, 0, 1);
                         break;
                     case 3:
-                        caseTurn(arrTmp, field, plChar, 0, 2);
+                        caseTurn(turnArr, field, plChar, 0, 2);
                         break;
                     case 4:
-                        caseTurn(arrTmp, field, plChar, 1, 0);
+                        caseTurn(turnArr, field, plChar, 1, 0);
                         break;
                     case 5:
-                        caseTurn(arrTmp, field, plChar, 1, 1);
+                        caseTurn(turnArr, field, plChar, 1, 1);
                         break;
                     case 6:
-                        caseTurn(arrTmp, field, plChar, 1, 2);
+                        caseTurn(turnArr, field, plChar, 1, 2);
                         break;
                     case 7:
-                        caseTurn(arrTmp, field, plChar, 2, 0);
+                        caseTurn(turnArr, field, plChar, 2, 0);
                         break;
                     case 8:
-                        caseTurn(arrTmp, field, plChar, 2, 1);
+                        caseTurn(turnArr, field, plChar, 2, 1);
                         break;
                     case 9:
-                        caseTurn(arrTmp, field, plChar, 2, 2);
+                        caseTurn(turnArr, field, plChar, 2, 2);
                         break;
                     default:
                         System.out.println("0_o");
@@ -76,7 +76,7 @@ public class TicTacToe {
                 scn.close();
                 System.out.println("Победил " + "\"" + plChar + "\"");
                 break;
-            } else if (arrTmp[1][0] == 9) {
+            } else if (turnArr[1][0] == 9) {
                 scn.close();
                 System.out.println("Ничья");
                 break;
@@ -84,7 +84,7 @@ public class TicTacToe {
         }
     }
 
-    static void caseTurn(int[][] arrTmp, char[][] array, char c, int x, int y){
+    static void caseTurn(int[][] turnArr, char[][] array, char c, int x, int y){
         if (array[x][y] != '.') {
             System.out.println("Тут занято, сюда ставить нельзя!");
         } else {
@@ -92,15 +92,15 @@ public class TicTacToe {
             System.out.println("----------");
             array[x][y] = c;
             printField(array);
-            placeSymbol(arrTmp);
+            placeSymbol(turnArr);
         }
     }
 
-    static void placeSymbol(int[][] arrTmp){
-        if(arrTmp[0][0] == 1)
-            arrTmp[0][0] = 0;
-        else arrTmp[0][0] = 1;
-        arrTmp[1][0]= arrTmp[1][0] + 1;
+    static void placeSymbol(int[][] turnArr){
+        if(turnArr[0][0] == 1)
+            turnArr[0][0] = 0;
+        else turnArr[0][0] = 1;
+        turnArr[1][0]= turnArr[1][0] + 1;
     }
 
     static void fillFieldsNewGame(char[][] array) {
