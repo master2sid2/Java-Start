@@ -19,7 +19,7 @@ public class TicTacToe {
         fillFieldsNewGame(field);
         printField(field);
 
-        int cord = 0, finCount = 0;
+        int cord, finCount = 0;
         char plChar = 'x';
 
         while (true) {
@@ -27,11 +27,7 @@ public class TicTacToe {
             System.out.println("Сейчас ход " + "\"" + plChar + "\"");
             System.out.println("Введите координату точки куда хотите поставить " + "\"" + plChar + "\"");
 
-            try{cord = scn.nextInt();
-            } catch (Exception e){
-                System.out.println("Неверный ввод");
-                break;
-            }
+            cord = scn.nextInt();
 
             if (cord > 9 && cord < 9) {
                 System.out.println("Неверный ввод");
