@@ -11,7 +11,7 @@ public class Task2 {
         int b = Integer.parseInt(scn.nextLine());
 
         System.out.println("Результаты выполнения операций:");
-        System.out.println("num1 + num2: " + a + b);
+        System.out.println("num1 + num2: " + (a + b));
         System.out.println("num1 - num2: " + (a - b));
         System.out.println("num1 * num2: " + (a * b));
         System.out.println("num1 / num2: " + (a / b));
