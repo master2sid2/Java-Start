@@ -1,12 +1,17 @@
+import java.util.Random;
+
 /**
  * Created by Master on 7.22.2015.
  */
 public class MyArrayToString {
     public static void main (String[] args){
-        int[] array = new int[5];
 
+        Random rnd = new Random();
+        int[] array = new int[rnd.nextInt(10)+1];
+        for(int i = 0; i < array.length; i++){
+            array[i]= rnd.nextInt(10)+1;
+        }
         myToString(array);
-
     }
 
     static void myToString(int[] array){
