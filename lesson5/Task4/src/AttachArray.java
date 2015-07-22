@@ -11,12 +11,9 @@ public class AttachArray {
         int[] array = new int[rnd.nextInt(10)+1];
         int[] attachArray = new int[rnd.nextInt(10)+1];
 
-        for(int i = 0; i < array.length; i++){
-            array[i] = rnd.nextInt(10)+1;
-        }
-        for(int i = 0; i < attachArray.length; i++){
-            attachArray[i] = rnd.nextInt(10)+1;
-        }
+        fillArray(array);
+        fillArray(attachArray);
+
         myAttachArray(array,attachArray);
         System.out.println("Длина первого массива: " + array.length);
         System.out.println("Массив: " + Arrays.toString(array));
@@ -25,7 +22,14 @@ public class AttachArray {
         System.out.println("объединённые массивы: " + Arrays.toString(myAttachArray(array,attachArray)));
     }
 
-    static int[] myAttachArray(int[] array, int[] attachArray){
+    static void fillArray(int[] array){
+        Random rnd = new Random();
+        for(int i = 0; i < array.length; i++){
+            array[i] = rnd.nextInt(10)+1;
+        }
+    }
+
+    static int[] myAttachArray(int[] array, int[] attachArray) {
 
         int[] tmpArray = new int[array.length + attachArray.length];
 
