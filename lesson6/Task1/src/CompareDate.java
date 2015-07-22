@@ -1,3 +1,4 @@
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -10,11 +11,12 @@ public class CompareDate {
     public static void main(String[] args){
 
         Scanner scn = new Scanner(System.in);
+        Date crndt = new Date(System.currentTimeMillis());
+        SimpleDateFormat newDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-        long ctm = System.currentTimeMillis();
-        Date crndt = new Date(ctm);
+        String printDate = newDateFormat.format(crndt);
 
-        System.out.println(crndt);
+        System.out.println(printDate);
 
 
     }
