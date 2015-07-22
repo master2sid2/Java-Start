@@ -1,7 +1,3 @@
-import com.sun.java.swing.plaf.windows.WindowsInternalFrameTitlePane;
-import com.sun.javaws.exceptions.ExitException;
-
-import javax.security.auth.DestroyFailedException;
 import java.util.Scanner;
 
 /**
