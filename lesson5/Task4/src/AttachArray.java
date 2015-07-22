@@ -19,6 +19,7 @@ public class AttachArray {
         System.out.println("Массив: " + Arrays.toString(array));
         System.out.println("Длина второго массива: " + attachArray.length);
         System.out.println("Массив: " + Arrays.toString(attachArray));
+        System.out.println("Длина объеденнёного массива: " + myAttachArray(array,attachArray).length);
         System.out.println("объединённые массивы: " + Arrays.toString(myAttachArray(array,attachArray)));
     }
 
