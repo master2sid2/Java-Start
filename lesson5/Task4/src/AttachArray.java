@@ -8,8 +8,8 @@ public class AttachArray {
     public static void main(String[] args){
 
         Random rnd = new Random();
-        int[] array = new int[5];
-        int[] attachArray = new int[3];
+        int[] array = new int[rnd.nextInt(10)+1];
+        int[] attachArray = new int[rnd.nextInt(10)+1];
 
         for(int i = 0; i < array.length; i++){
             array[i] = rnd.nextInt(10)+1;
