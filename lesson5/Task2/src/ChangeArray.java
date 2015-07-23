@@ -17,10 +17,10 @@ public class ChangeArray {
         System.out.println("Созданный массив:");
         System.out.println(Arrays.toString(arr));
         System.out.println("Увелечение первых трёх элементов на 1:");
-        tryChange(arr);
+        System.out.println(tryChange(arr));
     }
 
-    static void tryChange(int[] array) {
+    static int tryChange(int[] array) {
 
         int sum = 0;
         for (int i = 0; i < 3; i++) {
@@ -28,6 +28,7 @@ public class ChangeArray {
             sum += array[i];
         }
         System.out.println(Arrays.toString(array));
-        System.out.println("Сумма первых трёх элементов массива = " + sum);
+        System.out.println("Сумма первых трёх элементов:");
+        return sum;
     }
 }
