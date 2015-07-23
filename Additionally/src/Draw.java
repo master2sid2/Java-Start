@@ -24,9 +24,10 @@ public class Draw {
         char[][] c = new char[size][size];
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-               // if (i == size/2 || j == size/2 || j == size / 2 - i || j == size / 2 + i || j == i - size / 2 ||
-               // j == size - i + size / 2 - 1)
-                if (j == size / 2 - i || j == size / 2 + i || j == i - size / 2 || j == size - i + size / 2 - 1) {
+                if (i == size/2 || j == size/2 || j == size / 2 - i || j == size / 2 + i || j == i - size / 2 ||
+                j == size - i + size / 2 - 1)
+               // if (j == size / 2 - i || j == size / 2 + i || j == i - size / 2 || j == size - i + size / 2 - 1)
+                {
                     c[i][j] = ch;
                 } else {
                     c[i][j] = ' ';
