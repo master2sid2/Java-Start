@@ -26,6 +26,8 @@ public class AtachLine {
     }
 
     static void myAtach(String x,int y, float z){
-        System.out.println("S = " + x + "+" + y + "+" + z);
+        StringBuilder sb = new StringBuilder();
+        sb.append("S = ").append(x).append(" + ").append(y).append(" + ").append(z);
+        System.out.println(sb.toString());
     }
 }

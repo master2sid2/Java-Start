@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java-Start.iml" filepath="$PROJECT_DIR$/Java-Start.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson5/Task1/Task1.iml" filepath="$PROJECT_DIR$/lesson5/Task1/Task1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson6/Task1/Task1.iml" filepath="$PROJECT_DIR$/lesson6/Task1/Task1.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson6/Task1/Task1.iml" filepath="$PROJECT_DIR$/lesson6/Task1/Task1.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson5/Task1/Task1.iml" filepath="$PROJECT_DIR$/lesson5/Task1/Task1.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson5/Task2/Task2.iml" filepath="$PROJECT_DIR$/lesson5/Task2/Task2.iml" />
@@ -13,7 +13,6 @@
       <module fileurl="file://$PROJECT_DIR$/lesson6/Task6/Task6.iml" filepath="$PROJECT_DIR$/lesson6/Task6/Task6.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson2/lesson2.iml" filepath="$PROJECT_DIR$/lesson2/lesson2.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson3/lesson3.iml" filepath="$PROJECT_DIR$/lesson3/lesson3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson5/lesson5.iml" filepath="$PROJECT_DIR$/lesson5/lesson5.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson5/lesson5.iml" filepath="$PROJECT_DIR$/lesson5/lesson5.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson6/lesson6.iml" filepath="$PROJECT_DIR$/lesson6/lesson6.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson5/test/test.iml" filepath="$PROJECT_DIR$/lesson5/test/test.iml" />
