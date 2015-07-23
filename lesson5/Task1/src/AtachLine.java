@@ -10,7 +10,7 @@ public class AtachLine {
         String s = scn.nextLine();
         System.out.println("Введите целое число:");
 
-        int y=0; float z=0;
+        int y=0; double z=0;
 
         try { y = scn.nextInt();
         } catch (Exception e){
@@ -25,7 +25,7 @@ public class AtachLine {
         myAtach(s,y,z);
     }
 
-    static void myAtach(String x,int y, float z){
+    static void myAtach(String x,int y, double z){
         StringBuilder sb = new StringBuilder();
         sb.append("S = ").append(x).append(" + ").append(y).append(" + ").append(z);
         System.out.println(sb.toString());
