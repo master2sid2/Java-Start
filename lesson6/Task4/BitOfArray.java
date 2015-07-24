@@ -15,18 +15,20 @@ public class BitOfArray {
             arr[i] = rnd.nextInt(10)+1;
         }
         while (true){
-            System.out.println("Выберете оперцию которую хотете совершить:" + "\n" + "1 - Прочитать бит.\n" + "2 - Записать бит.");
+            System.out.println("Выберете оперцию которую хотете совершить:" + "\n" + "1 - Прочитать бит.\n" + "2 - Записать бит.\n"
+                + "3 - Выход.");
             int act;
             act = scn.nextInt();
-            while (act < 1 || act > 2 ){
+            while (act < 1 || act > 3 ){
                 System.out.println("Неверный ввод");
                 act = scn.nextInt();
             }
             if(act==1){
              readBit(arr);
-            } else {
+            } else if(act==2){
                 setBit(arr);
-            }
+            } else
+                break;
         }
     }
 
