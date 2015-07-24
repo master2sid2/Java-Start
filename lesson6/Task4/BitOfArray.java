@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.Random;
+import java.util.Arrays;
 
 /**
  * Написать код, который позволит менять и читать значения
