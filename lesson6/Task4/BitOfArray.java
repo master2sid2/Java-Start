@@ -15,8 +15,8 @@ public class BitOfArray {
             arr[i] = rnd.nextInt(10)+1;
         }
         while (true){
-            System.out.println("Выберете оперцию которую хотете совершить:" + "\n" + "1 - Прочитать бит.\n" + "2 - Записать бит.\n"
-                + "3 - Выход.");
+            System.out.println("Выберете оперцию которую хотете совершить:" + "\n" + "1 - Прочитать бит.\n"
+                    + "2 - Записать бит.\n" + "3 - Выход.");
             int act;
             act = scn.nextInt();
             while (act < 1 || act > 3 ){
