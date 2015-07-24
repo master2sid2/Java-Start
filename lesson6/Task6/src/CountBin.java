@@ -10,7 +10,6 @@ public class CountBin {
 
         System.out.println("Введите целое число:");
         int digit = scn.nextInt();
-        System.out.println("Количество едениц в бинарном формате:");
         count(digit);
 
     }
