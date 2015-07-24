@@ -12,7 +12,7 @@ public class BitOfArray {
         Random rnd = new Random();
         int[] arr = new int[rnd.nextInt(10)+1];
         for(int i = 0; i < arr.length; i++){
-            arr[i] = rnd.nextInt(1000)+1;
+            arr[i] = rnd.nextInt(10)+1;
         }
         while (true){
             System.out.println("Выберете оперцию которую хотете совершить:" + "\n" + "1 - Прочитать бит.\n" + "2 - Записать бит.");
