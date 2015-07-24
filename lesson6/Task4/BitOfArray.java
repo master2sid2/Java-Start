@@ -14,18 +14,19 @@ public class BitOfArray {
         for(int i = 0; i < arr.length; i++){
             arr[i] = rnd.nextInt(1000)+1;
         }
-
-        System.out.println("Выберете оперцию которую хотете совершить:" + "\n" + "1 - Прочитать бит.\n" + "2 - Записать бит.");
-        int act;
+        while (true){
+            System.out.println("Выберете оперцию которую хотете совершить:" + "\n" + "1 - Прочитать бит.\n" + "2 - Записать бит.");
+            int act;
             act = scn.nextInt();
-        while (act < 1 || act > 2 ){
-            System.out.println("Неверный ввод");
-            act = scn.nextInt();
-        }
-        if(act==1){
-            readBit(arr);
-        } else {
-            setBit(arr);
+            while (act < 1 || act > 2 ){
+                System.out.println("Неверный ввод");
+                act = scn.nextInt();
+            }
+            if(act==1){
+             readBit(arr);
+            } else {
+                setBit(arr);
+            }
         }
     }
 
