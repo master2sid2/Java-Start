@@ -79,7 +79,7 @@ public class BitOfArray {
             array[number] = array[number] | (1 << bit);
         else
             array[number] = array[number] &~ (1 << bit);
-                System.out.println(String.format("%32s", Integer.toBinaryString(array[number])).replace(' ', '0'));
+        System.out.println(String.format("%32s", Integer.toBinaryString(array[number])).replace(' ', '0'));
         System.out.println("Массив после измененния бита");
         System.out.println(Arrays.toString(array));
     }
