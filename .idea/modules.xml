@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Additionally/Additionally.iml" filepath="$PROJECT_DIR$/Additionally/Additionally.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java-Start.iml" filepath="$PROJECT_DIR$/Java-Start.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson6/Task1/Task1.iml" filepath="$PROJECT_DIR$/lesson6/Task1/Task1.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson6/Task1/Task1.iml" filepath="$PROJECT_DIR$/lesson6/Task1/Task1.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson5/Task1/Task1.iml" filepath="$PROJECT_DIR$/lesson5/Task1/Task1.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson5/Task2/Task2.iml" filepath="$PROJECT_DIR$/lesson5/Task2/Task2.iml" />

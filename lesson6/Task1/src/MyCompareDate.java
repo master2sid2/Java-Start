@@ -1,10 +1,4 @@
-import com.sun.javafx.geom.AreaOp;
-import sun.util.resources.cldr.ebu.CalendarData_ebu_KE;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Scanner;
 
 /**
