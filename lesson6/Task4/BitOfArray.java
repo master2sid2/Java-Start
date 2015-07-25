@@ -50,8 +50,7 @@ public class BitOfArray {
             System.out.println("Неверный ввод");
             bit = scn.nextInt();
         }
-        boolean prnBit = ((array[number] & (1 << bit)) !=0);
-        if (!prnBit){
+        if ((array[number] & (1 << bit)) == 0){
             System.out.println("Бит = 0");
         } else
             System.out.println("Бит = 1");
