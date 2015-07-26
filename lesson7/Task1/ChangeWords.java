@@ -17,8 +17,7 @@ public class ChangeWords {
 
         String[] array = s.split(" ");
         StringBuilder str = new StringBuilder();
-        String tmpStr;
-        tmpStr = array[array.length-1];
+        String tmpStr = array[array.length-1];
         array[array.length-1] = array[0];
         array[0] = tmpStr;
         for(int i = 0; i < array.length; i++){
