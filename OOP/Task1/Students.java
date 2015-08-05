@@ -1,28 +1,51 @@
 import java.util.Date;
-
 /**
  * Created by Master on 8.1.2015.
  */
 public class Students {
     private int id;
-    private String name,soname,midlName,address,phoneNumber,department,group;
+    private String name;
+    private String lastName;
+    private String midName;
+    private String address;
+    private String phoneNumber;
+    private String department;
+    private String group;
     private Date birthDate;
-    private int kurs;
+    private int course;
+
+    public Students(int id, String name, String lastName, String midName, Date birthDate,
+                    String address, String phoneNumber, String department, int course, String group){
+
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.midName = midName;
+        this.birthDate = birthDate;
+        this.department = department;
+        this.course = course;
+        this.group = group;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+    }
 
     public void setId(int id) {
         this.id = id;
     }
 
     public void setName(String name) {
+        checkString(name);
         this.name = name;
     }
 
-    public void setSoname(String soname) {
-        this.soname = soname;
+    public void setLastName(String lastName) {
+        checkString(lastName);
+        this.lastName = lastName;
     }
 
-    public void setMidlName(String midlName) {
-        this.midlName = midlName;
+    public void setMidName(String midName) {
+        checkString(midName);
+        this.midName = midName;
     }
 
     public void setAddress(String address) {
@@ -42,15 +65,14 @@ public class Students {
     }
 
     public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
+        this.birthDate = (birthDate == null) ? this.birthDate : birthDate;
     }
 
-    public void setKurs(int kurs) {
-        this.kurs = kurs;
+    public void setCourse(int kurs) {
+        this.course = kurs;
     }
 
     public int getId() {
-
         return id;
     }
 
@@ -58,12 +80,12 @@ public class Students {
         return name;
     }
 
-    public String getSoname() {
-        return soname;
+    public String getLastName() {
+            return lastName;
     }
 
-    public String getMidlName() {
-        return midlName;
+    public String getMidName() {
+        return midName;
     }
 
     public String getAddress() {
@@ -86,27 +108,30 @@ public class Students {
         return birthDate;
     }
 
-    public int getKurs() {
-        return kurs;
+    public int getCourse() {
+        return course;
     }
 
-    public Students(int id, String name, String soname, String midlName, Date birthDate,
-                    String address, String phoneNumber, String department, String kurs, String group){
-
-        this.id = id;
-        this.name = name;
-        this.soname = soname;
-        this.midlName = midlName;
-        this.birthDate = birthDate;
-        this.department = department;
-        this.group = group;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
-
-
-
+    private void checkString(String s){
+        if(s == null || s.equals(" "))
+            throw new IllegalArgumentException("Неверно введены данные!");
 
     }
 
-
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Students{");
+        sb.append("id=").append(id);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", lastName='").append(lastName).append('\'');
+        sb.append(", midlName='").append(midName).append('\'');
+        sb.append(", address='").append(address).append('\'');
+        sb.append(", phoneNumber='").append(phoneNumber).append('\'');
+        sb.append(", department='").append(department).append('\'');
+        sb.append(", group='").append(group).append('\'');
+        sb.append(", birthDate=").append(birthDate);
+        sb.append(", course=").append(course);
+        sb.append('}');
+        return sb.toString();
+    }
 }
