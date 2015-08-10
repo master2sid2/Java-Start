@@ -37,13 +37,13 @@ public class CyrcleTrain implements Train{
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("CyrcleTrain{");
+        StringBuilder sb = new StringBuilder("{");
         for(int i = 0; i < list.size(); i++){
             Wagon wagon = list.get(i);
             sb.append(wagon.isLampOn());
-            sb.append(",");
+            sb.append("}{");
         }
-        sb.deleteCharAt(sb.length()-1).append('}');
+        sb.deleteCharAt(sb.length()-1);
         return sb.toString();
     }
 

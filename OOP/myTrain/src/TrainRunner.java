@@ -6,14 +6,12 @@ import java.util.Random;
 public class TrainRunner {
     public static void main(String[] args) {
         Random rnd = new Random();
-        CyrcleTrain train = new CyrcleTrain(rnd.nextInt(20)+1);
-        System.out.println(train.toString());
-
-        System.out.println(train.isLength(lenght(train)));
-        System.out.println(train.getStep());
-
-
-        System.out.println(train.toString());
+        int rndInt = rnd.nextInt(20)+1;
+        CyrcleTrain train = new CyrcleTrain(rndInt);
+        String str = train.toString();
+        System.out.println("Рассчитана длина поезда: " + lenght(train));
+        System.out.println("Длина сгенерированого поезда: " + rndInt);
+        System.out.println("Визуализация поезда: " + str);
     }
 
     private static int lenght(CyrcleTrain train){
