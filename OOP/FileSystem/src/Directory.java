@@ -20,12 +20,11 @@ public class Directory extends FileSystem {
     }
 
     @Override
-    public void putData(Object fs){
-        FileSystem tmp = (FileSystem) fs;
+    public void putData(FileSystem fs){
         if (this == fs){
             throw new UnsupportedOperationException();
         }
-        size += tmp.getSize();
+        size += fs.getSize();
 
 
     }

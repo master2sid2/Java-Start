@@ -31,7 +31,7 @@ abstract class FileSystem {
         this.type=TYPE;
     }
 
-    public void putData(Object fs){
+    public void putData(FileSystem fs){
 
     }
 

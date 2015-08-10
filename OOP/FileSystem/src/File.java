@@ -16,7 +16,7 @@ public class File extends FileSystem {
     }
 
     @Override
-    public void putData(Object fs){
+    public void putData(FileSystem fs){
             throw new UnsupportedOperationException();
     }
 }
