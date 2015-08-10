@@ -9,6 +9,7 @@ public class TrainRunner {
         int rndInt = rnd.nextInt(20)+1;
         CyrcleTrain train = new CyrcleTrain(rndInt);
         String str = train.toString();
+        System.out.println("Длина поезда ранвяется длине сгенерированого числа: " + train.isLength(lenght(train)));
         System.out.println("Рассчитана длина поезда: " + lenght(train));
         System.out.println("Длина сгенерированого поезда: " + rndInt);
         System.out.println("Визуализация поезда: " + str);
