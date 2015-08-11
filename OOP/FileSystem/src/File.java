@@ -8,6 +8,7 @@ public class File extends FileSystem {
         this.name = name;
         this.size = size;
         this.type = "File";
+        this.mark = false;
     }
 
     @Override

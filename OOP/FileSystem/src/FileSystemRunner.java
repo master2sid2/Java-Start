@@ -1,8 +1,12 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Master on 8.10.2015.
  */
 public class FileSystemRunner {
     public static void main(String[] args) {
+
         FileSystem root = new Directory("Root");
         FileSystem dir1 = new Directory("dir1");
         FileSystem dir2 = new Directory("dir2");
@@ -21,6 +25,7 @@ public class FileSystemRunner {
         root.putData(dir1);
         root.putData(dir2);
         root.putData(f5);
+
         System.out.println("Размер директории Root: " + root.getSize() + "B");
         System.out.println("Размер директории dir1: " + dir1.getSize() + "B");
         System.out.println("Размер директории dir2: " + dir2.getSize() + "B");
