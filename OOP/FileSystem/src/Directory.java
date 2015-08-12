@@ -32,7 +32,7 @@ public class Directory extends FileSystem  {
 
     @Override
     public void putData(FileSystem fs){
-        if (this == fs){
+        if (this == fs || fs == null){
             throw new UnsupportedOperationException();
         }
         if(fs.mark){
