@@ -18,7 +18,7 @@ public class CarRunner {
         mitsuboshi.ride();
         mitsuboshi.startEngine();
         mitsuboshi.ride();
-       // mitsuboshi.changeWheel(21);
+        mitsuboshi.changeWheel(21);
         System.out.println("Пробег автомобиля составляет " + mitsuboshi.getMileage() + " км.");
         System.out.println("Остаток топлива " + mitsuboshi.getFuel() + " литров.");
 
