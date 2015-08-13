@@ -12,9 +12,6 @@ public class Wheel {
     }
 
     Wheel(double radius){
-        if(radius < 14 || radius > 32){
-            System.out.println("Размер колеса должен быть от 14 до 32 дюймов");
-        } else
             this.radius = radius;
     }
 

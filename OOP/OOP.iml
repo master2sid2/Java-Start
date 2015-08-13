@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Task2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/myTrain/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/FileSystem/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Blinov/lessons34/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

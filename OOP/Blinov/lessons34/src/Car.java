@@ -11,11 +11,15 @@ public class Car {
 
     private Engine engine = new Engine(5);
 
+    private Wheel frontRight = new Wheel();
+    private Wheel frontLeft = new Wheel();
+    private Wheel rearRight = new Wheel();
+    private Wheel rearLeft = new Wheel();
+
     Car(){
         this.carName = "Неопределено";
         this.maxFuel = FUEL;
         this.fuel = maxFuel;
-        inicializateWheels();
     }
     Car(String name, int fuel){
         if(name == null || name.equals("")){
@@ -27,7 +31,6 @@ public class Car {
         else
             this.maxFuel = fuel;
         this.fuel = maxFuel;
-        inicializateWheels();
     }
     Car(String name, int fuel, int tank){
         if(name == null || name.equals("")){
@@ -39,7 +42,6 @@ public class Car {
         else
             this.maxFuel = tank;
         this.fuel = maxFuel;
-        inicializateWheels();
     }
 
     public String getCarName() {
@@ -113,19 +115,12 @@ public class Car {
         if(this.engine.hasSterted()){
             System.out.println("Нельзя менять колёса на ходу");
         } else {
-            Wheel frontRight = new Wheel(radius);
-            Wheel frontLeft = new Wheel(radius);
-            Wheel rearRight = new Wheel(radius);
-            Wheel rearLeft = new Wheel(radius);
+            this.frontRight = new Wheel(radius);
+            this.frontLeft = new Wheel(radius);
+            this.rearRight = new Wheel(radius);
+            this.rearLeft = new Wheel(radius);
             System.out.println("Колёса успешно заменены");
         }
-    }
-
-    private void inicializateWheels(){
-        Wheel frontRight = new Wheel();
-        Wheel frontLeft = new Wheel();
-        Wheel rearRight = new Wheel();
-        Wheel rearLeft = new Wheel();
     }
 
     public void startEngine(){
@@ -140,5 +135,51 @@ public class Car {
     }
     public void setExpense(int expense){
         this.engine.setExpense(expense);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Car)) return false;
+
+        Car car = (Car) o;
+
+        if (maxFuel != car.maxFuel) return false;
+        if (!carName.equals(car.carName)) return false;
+        if (!engine.equals(car.engine)) return false;
+        if (!frontLeft.equals(car.frontLeft)) return false;
+        if (!frontRight.equals(car.frontRight)) return false;
+        if (!rearLeft.equals(car.rearLeft)) return false;
+        if (!rearRight.equals(car.rearRight)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = carName.hashCode();
+        result = 31 * result + maxFuel;
+        result = 31 * result + engine.hashCode();
+        result = 31 * result + frontRight.hashCode();
+        result = 31 * result + frontLeft.hashCode();
+        result = 31 * result + rearRight.hashCode();
+        result = 31 * result + rearLeft.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("Car{");
+        sb.append("carName='").append(carName).append('\'');
+        sb.append(", maxFuel=").append(maxFuel);
+        sb.append(", fuel=").append(fuel);
+        sb.append(", engine expense=").append(engine.getExpense());
+        sb.append(", engine mileage=").append(engine.getMileage());
+        sb.append(", frontRight=").append(this.frontRight.getRadius());
+        sb.append(", frontLeft=").append(this.frontLeft.getRadius());
+        sb.append(", rearRight=").append(this.rearRight.getRadius());
+        sb.append(", rearLeft=").append(this.rearLeft.getRadius());
+        sb.append('}');
+        return sb.toString();
     }
 }
