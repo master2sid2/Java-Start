@@ -14,14 +14,11 @@ public class FileSystemRunner {
         FileSystem f4 = new File("f4",40);
         FileSystem f5 = new File("f5",50);
 
-        dir1.putData(f1);
-        dir1.putData(f2);
-        dir3.putData(f3);
-        dir2.putData(f4);
-        dir2.putData(dir3);
-        root.putData(dir1);
-        root.putData(dir2);
-        root.putData(f5);
+        root.add(dir1.add(f1,f2)).add(dir2.add(f4).add(dir3.add(f3))).add(f5);
+
+/*        root.add(dir1.add(f1,f2)).add(dir2.add(f4)).add(f5);
+        dir2.add(dir3);
+        dir3.add(f3);*/
 
         System.out.println("Размер директории Root: " + root.getSize() + "B");
         System.out.println("Размер директории dir1: " + dir1.getSize() + "B");

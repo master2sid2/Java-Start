@@ -3,21 +3,31 @@
  */
 public class File extends FileSystem {
 
+    private int size;
+    private String type;
+
     public File(String name, int size){
-        super(name,size);
+        super(name);
         this.name = name;
         this.size = size;
         this.type = "File";
-        this.mark = false;
     }
 
     @Override
     public int getSize(){
-        return size;
+        return this.size;
     }
 
     @Override
-    public void putData(FileSystem fs){
+    public FileSystem add(FileSystem fs){
             throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("File{");
+        sb.append("size=").append(size);
+        sb.append('}');
+        return sb.toString();
     }
 }
