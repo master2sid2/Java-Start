@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: Java-Start.jar
-Main-Class: Task5.TicTacToe
-
